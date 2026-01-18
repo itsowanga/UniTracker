@@ -1,0 +1,52 @@
+#sidebar{
+    border: 1px solid black;
+    display: inline-block;
+    width: 20vw;
+    height: 100vh;
+    background-color: white;
+}
+#mainDash{
+    border: 1px solid black;
+    position: absolute;
+    display: inline-block;
+    width: 80vw;
+    height: 100vh;
+    background-color: white;
+}
+
+#name{
+    position: relative;
+    text-align: center;
+}
+.side-options{
+    text-align: center;
+}
+.upper-dash{
+    position: relative;
+    display: block;
+    margin: 2px;
+    height: 6%;
+    border: 1px solid black;
+}
+.middle-dash{
+    margin: 2px;
+    height: 45.1%;
+}
+.lower-dash{
+    margin: 2px;
+    height: 45.1%;
+}
+.middle-dash > div{
+    display: inline-block;
+    margin: 2px;
+    width: 49.1%;
+    height:100%;
+    border: 1px solid black;
+}
+.lower-dash > div{
+    display: inline-block;
+    margin: 2px;
+    width: 49.1%;;
+    height:100%;
+    border: 1px solid black
+}
