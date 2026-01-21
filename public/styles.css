@@ -1,9 +1,10 @@
 html{
-    background-color: whitesmoke;
+    background-color: #ddd;
 }
 
 * {
   box-sizing: border-box; /* Makes width calculations predictable */
+  font-family: Inter, serif;
 }
 
 #sidebar{
@@ -11,16 +12,17 @@ html{
     display: inline-block;
     width: 20vw;
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: #ddd;
 }
 #main-dash{
     /*border: 1px solid black;*/
-    margin-left: 10px;
+   
+    display: inline-flex;
     position: absolute;
-    display: inline-block;
+    flex-direction: column;
     width: 80vw;
     height: 100vh;
-    background-color: whitesmoke;
+    background-color: #ddd;
 
 }
 
@@ -29,31 +31,31 @@ html{
     text-align: center;
 }
 .side-options{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
-.side-options > div{
-    margin-top: 80px;
-}
-.module-side{
+
+#module-side{
     border: 2px solid #ddd;
     background-color: ghostwhite;
     height:50px;
     border-radius: 10px;
 }
-.planner-side{
+#planner-side{
     border: 2px solid #ddd;
     background-color: ghostwhite;
     height:50px;
     border-radius: 10px;
 }
 
-.alerts-side{
+#alerts-side{
     border: 2px solid #ddd;
     background-color: ghostwhite;
     height:50px;
     border-radius: 10px;
 }
-.profile-side{
+#profile-side{
      border: 2px solid #ddd;
      background-color: ghostwhite;
      height:50px;
@@ -62,27 +64,22 @@ html{
 }
 
 .upper-dash{
-    position: relative;
-    display: block;
-    margin: 2px;
-    height: 6%;
-  
-    background-color: whitesmoke;
+    display: flex;
+    background-color: ghostwhite;
 }
 .middle-dash{
-    
-    height: 40%;
-    background-color: whitesmoke;
+    display: flex;
+    height: 50%;
+    background-color: #ddd;
 }
 .lower-dash{
-    margin-top: 20px;
-    height: 45.1%;
-    background-color: whitesmoke;
+    display: flex;
+    height: 50%;
+    background-color: #ddd;
  
 }
 .middle-dash > div{
     display: inline-block;
-    margin: 2px;
     width: 49.1%;
     height:100%;
     border: 2px solid #ddd;
@@ -100,23 +97,38 @@ html{
     
 }
 
-.deadlines{
+#deadlines{
     background-color: ghostwhite;
+    margin-right: 5px;
 }
 
-.high-priority{
+#high-priority{
     background-color: ghostwhite;
 }
-.planner-dash{
+#planner-dash{
     background-color: ghostwhite;
-    margin-right: 6px;
+    margin-right: 5px;
 }
 
-.visual-dash{
+#visual-dash{
     background-color: ghostwhite;
 }
 
 h2{
     margin-top:0;
     margin-bottom: 0;
+}
+.side-labels{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.pressed{
+    opacity: 0.5;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+
 }

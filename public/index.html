@@ -4,30 +4,38 @@
     <meta charset="UTF-8">
     <title>UniTracker</title>
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="upper-dash"> 
+            <img src="../assets/logo.png" class="logo" alt="logo image"/>
+            <h1>UniTracker</h1>
+            </div>
     <div id="sidebar">
-        <h1 id="name">UniTracker</h1>
+      
         <div class="side-options">
-        <div class="module-side"><a href="./modules.html">Modules</a></div>
-        <div class="planner-side"><a href="./modules.html">Planner</a></div>
-        <div class="alerts-side"><a href="./modules.html">Alerts</a></div>
-        <div class="profile-side"><a href="./modules.html">Profile</a></div>
+        <div id="module-side"><h3 class="side-labels">Modules</h3></a></div>
+        <div id="planner-side"><h3 class="side-labels">Calendar</h3></a></div>
+        <div id="alerts-side"><h3 class="side-labels">Deadlines</h3></a></div>
+        <div id="profile-side"><h3 class="side-labels">Settings</h3></a></div>
 
         </div>
 
     </div>
     <div id="main-dash">
-        <div class="upper-dash"> Upper Dash</div>
+        
         <div class="middle-dash">
-            <div class="deadlines"> <h2>Deadlines</h2> </div>
-            <div class="high-priority"><h2>High Priority</h2></div>
+            <div id="deadlines"> <h2>Deadlines</h2> </div>
+            <div id="high-priority"><h2>High Priority</h2></div>
         </div>
         <div class="lower-dash">
-            <div class="planner-dash"><h2>Weekly Planner</h2></div>
-            <div class="visual-dash"><h2>Visualizations</h2></div>
+            <div id="planner-dash"><h2>Weekly Planner</h2></div>
+            <div id="visual-dash"><h2>Visualizations</h2></div>
         </div>
         
     </div>
+    <script src="./app.js" charset="UTF-8"></script>
 </body>
 </html>
