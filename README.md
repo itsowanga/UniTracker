@@ -13,7 +13,7 @@ student-module-tracker/
 │  ├─ data/
 │  │  └─ modules.json           # temporary storage (later DB)
 │  └─ utils/
-│     └─ id.js                  # helper to generate IDs
+│     └─ generateId.js                  # helper to generate IDs
 │
 └─ public/
    ├─ index.html                # Dashboard (list + summary)
