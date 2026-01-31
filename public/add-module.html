@@ -9,19 +9,24 @@
     <nav>
         
         <a href="./index.html">Dashboard</a>
+        <a href="./profile.html">Profile</a>
         <a href="./login.html">Logout</a>
+        
     </nav>
-    <h1>Add Module</h1>
+    <h1>Add New Module</h1>
     <form action="api/add-module">
-        <label for="module-id">Enter module ID:</label>
-        <input type="text" name="id"/><br/>
-        <label for="module-code">Enter module code:</label>
-        <input type="text" name="code"/><br/>
-        <label for="module-name">Enter module name:</label>
-        <input type="text" name="name"/><br/>
-        <label for="module-semester">Enter module semester:</label>
-        <input type="number" name="weight"/><br/>
-
+        <label for="module-id">Enter ID:</label>
+        <input type="text" name="id" required/><br/>
+        <label for="module-code">Enter code:</label>
+        <input type="text" name="code" minlength=4 maxlength=7 required/><br/>
+        <label for="module-name" >Enter name:</label>
+        <input type="text" name="name" required/><br/>
+        <label for="module-semester">Enter semester:</label>
+        <input type="number" name="semester" min="1" max="2" required/><br/>
+        <label for="module-color">Enter color code:</label>
+        <input type="color" name="color" required/><br/><br/>
+        <input type="submit"value="Add Module"/>
+        
     </form>
 </body>
 </html>

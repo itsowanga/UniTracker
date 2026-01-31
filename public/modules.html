@@ -2,13 +2,183 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>UniTracker - Modules</title>
 </head>
 <body>
-    <form >
-        <label for="search">Search module</label>
-        <input type="text" name="email" required>
+    <nav>
+        <a href="./dashboard.html">Dashboard</a>
+        <a href="./profile.html">Profile</a>
+        <a href="./login.html">Logout</a>
+    </nav>
+    <h1>UniTracker - Modules</h1>
+    <a href="./add-module.html">Add Module</a><br/>
+    <form action="modules/search/" method="get">
+        <label for="search-module">Search module:</label>
+        <input type="text" name="code" required>
+        <input type="submit"/>
+    </form><br/>
+    <form action="modules/filter/" method="get">
+        <label for="filter-status">Filter by status:</label>
+        <select name="status" required>
+            <option value="active">Active</option>
+            <option value="dropped">Dropped</option>
+        </select>
+        <input type="submit" value="Filter"/>
+        <a href="./modules.html">Reset</a><br/>
+        <label for="filter-semester">Filter by semester:</label>
+        <select name="semester" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+        <input type="submit" value="Filter"/>
+        <a href="./modules.html">Reset</a><br/>
+        <label for="filter-lecturer">Filter by lecturer:</label>
+        <select name="lecturer" required>
+            <option value="lecturer1">Lecturer 1</option>
+            <option value="lecturer2">Lecturer 2</option>
+            <option value="lecturer3">Lecturer 3</option>
+            <option value="lecturer4">Lecturer 4</option>
+            <option value="lecturer5">Lecturer 5</option>
+        </select>
+        <input type="submit" value="Filter"/>
+        <a href="./modules.html">Reset</a><br/>
 
     </form>
+    <form action="modules/sort/" method="get">
+        <label for="sort-by">Sort by:</label>
+        <select name="sort-by" required>
+            <option value="id">ID</option>
+            <option value="name">Name</option>
+            <option value="semester">Semester</option>
+            <option value="status">Status</option>
+            <input type="submit" value="Sort"/>
+        </select>
+        <a href="./modules.html">Reset</a><br/>
+        <label for="sort-order">Sort order:</label>
+        <select name="sort-order" required>
+            <option value="asc">Ascending</option>
+            <option value="desc">Descending</option>
+        </select>
+        <input type="submit" value="Sort"/>
+        <a href="./modules.html">Reset</a><br/>
+        <div class="widgets">
+            <div class="widget">
+                <h3>Total Modules</h3>
+                <p>10</p>
+            </div>
+            <div class="widget">
+                <h3>Active Modules</h3>
+                <p>8</p>
+            </div>
+            <div class="widget">
+                <h3>Dropped Modules</h3>
+                <p>2</p>
+            </div>
+        </div>
+            
+        
+    <div class="modules-table">
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Code</th>
+                <th>Name</th>
+                <th>Semester</th>
+                <th>Lecturer</th>
+                <th>Color</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>101</td>
+                <td>Module 1</td>
+                <td>1</td>
+                <td>Lecturer 1</td>
+                <td>#000000</td>
+                <td>Active</td>
+                <td>
+                    <a href="./module-details.html">View</a>
+                    <a href="./module-edit.html">Edit</a>
+                    <a href="./module-delete.html">Delete</a>
+                </td>
+                
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>102</td>
+                <td>Module 2</td>
+                <td>2</td>
+                <td>Lecturer 2</td>
+                <td>#000000</td>
+                <td>Active</td>
+                <td>
+                    <a href="./module-details.html">View</a>
+                    <a href="./module-edit.html">Edit</a>
+                    <a href="./module-delete.html">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>103</td>
+                <td>Module 3</td>
+                <td>3</td>
+                <td>Lecturer 3</td>
+                <td>#000000</td>
+                <td>Active</td>
+                <td>
+                    <a href="./module-details.html">View</a>
+                    <a href="./module-edit.html">Edit</a>
+                    <a href="./module-delete.html">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>104</td>
+                <td>Module 4</td>
+                <td>4</td>
+                <td>Lecturer 4</td>
+                <td>#000000</td>
+                <td>Active</td>
+                <td>
+                    <a href="./module-details.html">View</a>
+                    <a href="./module-edit.html">Edit</a>
+                    <a href="./module-delete.html">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>105</td>
+                <td>Module 5</td>
+                <td>5</td>
+                <td>Lecturer 5</td>
+                <td>#000000</td>
+                <td>Active</td>
+                <td>
+                    <a href="./module-details.html">View</a>
+                    <a href="./module-edit.html">Edit</a>
+                    <a href="./module-delete.html">Delete</a>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>106</td>
+                <td>Module 6</td>
+                <td>6</td>
+                <td>Lecturer 6</td>
+                <td>#000000</td>
+                <td>Dropped</td>
+                <td>
+                    <a href="./module-details.html">View</a>
+                    <a href="./module-edit.html">Edit</a>
+                    <a href="./module-delete.html">Delete</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
 </body>
 </html>
